@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { SiGmail } from "react-icons/si"
+import Link from '@mui/material/Link';
 
 const Footer = () => {
     return (
@@ -21,18 +22,27 @@ const Footer = () => {
                 <Box sx={{
                     display: "flex",
                     alignItems: "flex-end",
-                    height:100,
-                    margin:0,
-                    padding:0
+                    height: 100,
+                    margin: 0,
+                    padding: 0
                 }} >
                     <Typography>
                         Paged created by Luis Martinez
                     </Typography>
-                    <AiFillGithub size="50" style={{
 
-                    }}></AiFillGithub>
-                    <AiFillLinkedin size="50"></AiFillLinkedin>
-                    <SiGmail size="50"></SiGmail>
+                    <Link href="https://github.com/luisMartinez011" target="_blank">
+                        <AiFillGithub size="50" ></AiFillGithub>
+                    </Link>
+
+                    <Link href="https://www.linkedin.com/in/luismartinez011/" target="_blank">
+                        <AiFillLinkedin size="50"></AiFillLinkedin>
+                    </Link>
+
+                    <Link href="mailto:tauroluiseduardo@gmail.com" target="_blank">
+                        <SiGmail size="50"></SiGmail>
+                    </Link>
+
+
                 </Box>
             </Container>
         </React.Fragment>
