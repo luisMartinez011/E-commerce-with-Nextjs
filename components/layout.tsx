@@ -36,6 +36,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
   return (
     <div>
       <AppBar position="static">
@@ -109,7 +110,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp"  />
+                  <Avatar alt="Remy Sharp" />
                 </IconButton>
               </Tooltip>
               <Menu
@@ -140,7 +141,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </AppBar>
       {children}
 
-      <Footer/>
+      <Footer />
     </div>
   )
 }
